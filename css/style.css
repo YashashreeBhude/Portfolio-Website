@@ -1,0 +1,128 @@
+.glass {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.22);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.616);
+}
+
+body {
+    background-color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.text{
+    color: #ffffff;
+}
+
+#title {
+    font-size: 1.8rem;
+    /* color: #0d6efd; */
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.shrink-out {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.shrink-in {
+    transform: scale(1);
+    opacity: 1;
+}
+
+ .skill-card {
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  background-color: #ffffff;
+  border: 2px solid transparent;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0, 123, 255, 0.2);
+  border: 3px solid #0d6efd;
+}
+
+.skill-card {
+  position: relative;
+  transition: all 0.3s ease; 
+  border-radius: 20px;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  border: 3px solid transparent;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-color: #fff; /* default background */
+  background-image: 
+    linear-gradient(#fff, #fff), /* inner */
+    linear-gradient(135deg, #00ffea, #fd290d,   #bd66ce); /* border */
+  transition: all 0.3s ease;
+  box-shadow: 0 0 25px rgba(253, 254, 255, 0.3);
+}
+
+
+.icon-frame {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  border: 3px solid #dee2e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.icon-frame:hover {
+  transform: scale(1.1);
+}
+
+.icon-frame img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+
+
+.card-body ul li {
+  padding: 4px 0;
+  color: #333;
+}
+
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+  }
+
+  .project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .object-fit-cover {
+  /* object-fit: cover;
+  height: 100%; */
+  padding: 2px;
+  border-radius: 12px;
+  
+}
+
+#contact .card p a {
+  word-break: break-all;   /* Breaks long words/emails */
+  display: inline-block;   /* Ensures it respects the container */
+  max-width: 100%;         /* Prevent overflow */
+}
